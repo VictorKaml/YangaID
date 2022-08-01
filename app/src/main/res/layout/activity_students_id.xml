@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".studentsID">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="90dp">
+
+        <ImageButton
+            android:id="@+id/backTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/back"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Students Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/studentName"
+        app:layout_constraintLeft_toLeftOf="@id/studentName" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Register No"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/studentReg"
+        app:layout_constraintLeft_toLeftOf="@id/studentReg" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Branch"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/studentBranch"
+        app:layout_constraintLeft_toLeftOf="@id/studentBranch" />
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter your full name"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/studentReg"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Register No"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/studentName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/studentName"
+        app:layout_constraintTop_toBottomOf="@+id/studentName" />
+
+    <EditText
+        android:id="@+id/studentBranch"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Branch"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/studentName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/studentName"
+        app:layout_constraintTop_toBottomOf="@+id/studentReg" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.2"
+        android:text="GENERATE"
+        android:textColor="#351702"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

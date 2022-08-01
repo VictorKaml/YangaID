@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".studentsID">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="First Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/firstName"
+        app:layout_constraintLeft_toLeftOf="@id/firstName" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Sex"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gender"
+        app:layout_constraintLeft_toLeftOf="@id/firstName" />
+
+    <TextView
+        android:id="@+id/lastnametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Last Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
+        app:layout_constraintLeft_toLeftOf="@id/lastName" />
+
+    <TextView
+        android:id="@+id/nationalityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Nationality"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gender"
+        app:layout_constraintLeft_toLeftOf="@id/nationality" />
+
+
+    <TextView
+        android:id="@+id/idnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Identification No"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idNo"
+        app:layout_constraintLeft_toLeftOf="@id/idNo" />
+
+    <TextView
+        android:id="@+id/dateofissuetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Date of Issue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dateofissue"
+        app:layout_constraintLeft_toLeftOf="@id/idNo" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Date of Birth"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dateofbirth"
+        app:layout_constraintLeft_toLeftOf="@id/idNo" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="First name"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Sex"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintLeft_toLeftOf="@id/firstName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/firstName"
+        app:layout_constraintTop_toBottomOf="@id/lastName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Last name"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/firstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/firstName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName" />
+
+    <EditText
+        android:id="@+id/idNo"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter identification number"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/nationality"
+        app:layout_constraintStart_toStartOf="@+id/gender"
+        app:layout_constraintTop_toBottomOf="@+id/nationality" />
+
+    <EditText
+        android:id="@+id/dateofbirth"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter date of birth"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/dateofissue"
+        app:layout_constraintStart_toStartOf="@+id/dateofissue"
+        app:layout_constraintTop_toBottomOf="@+id/dateofissue" />
+
+    <EditText
+        android:id="@+id/dateofissue"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter date of Issue"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/idNo"
+        app:layout_constraintStart_toStartOf="@+id/idNo"
+        app:layout_constraintTop_toBottomOf="@id/idNo" />
+
+    <EditText
+        android:id="@+id/nationality"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Nationality"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintRight_toRightOf="@id/lastName"
+        app:layout_constraintTop_toBottomOf="@id/lastName" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.2"
+        android:text="GENERATE"
+        android:textColor="#351702"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dateofbirth"
+        app:layout_constraintStart_toStartOf="@+id/dateofbirth"
+        app:layout_constraintTop_toBottomOf="@+id/dateofbirth"
+        tools:ignore="UnusedAttribute" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="90dp">
+
+        <ImageButton
+            android:id="@+id/backTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/back"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.appcompat.widget.Toolbar>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>

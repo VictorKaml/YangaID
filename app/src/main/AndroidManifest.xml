@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yangaid">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YangaID">
+        <activity
+            android:name=".Medo"
+            android:exported="false" />
+        <activity
+            android:name=".NationalShare"
+            android:exported="false" />
+        <activity
+            android:name=".scanner"
+            android:exported="false" />
+        <activity
+            android:name=".scan3"
+            android:exported="false" />
+        <activity
+            android:name=".scan1"
+            android:exported="false" />
+        <activity
+            android:name=".scan2"
+            android:exported="false" />
+        <activity
+            android:name=".help"
+            android:exported="false" />
+        <activity
+            android:name=".ViewShareStudents"
+            android:exported="false" />
+        <activity
+            android:name=".ViewShareDrivers"
+            android:exported="false" />
+        <activity
+            android:name=".qrCode"
+            android:exported="false" />
+        <activity
+            android:name=".upload"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".about"
+            android:exported="false" />
+        <activity
+            android:name=".progressBarMedical"
+            android:exported="false" />
+        <activity
+            android:name=".progressBarStudents"
+            android:exported="false" />
+        <activity
+            android:name=".progressBarDrivers"
+            android:exported="false" />
+        <activity
+            android:name=".progressBarNational"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDriversID"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMedicalID"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStudentsID"
+            android:exported="false" />
+        <activity
+            android:name=".ViewNationalID"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
+            android:name=".driversID"
+            android:exported="false" />
+        <activity
+            android:name=".medicalID"
+            android:exported="false" />
+        <activity
+            android:name=".studentsID"
+            android:exported="false" />
+        <activity
+            android:name=".nationalID"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

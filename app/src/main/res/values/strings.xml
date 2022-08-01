@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Yanga ID</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="phone_number">Enter your phone number</string>
+    <string name="phone">Phone Number</string>
+    <string name="create_an_account">Sign Up</string>
+    <string name="proceed">Proceed</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="password">Password</string>
+    <string name="password_verify">Re-enter password</string>
+    <string name="enter_your_password_again">Enter your password again</string>
+    <string name="full_name">Full Name</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="home">Home</string>
+    <string name="user_virtual_id">Virtual ID</string>
+    <string name="national_id">NATIONAL ID</string>
+    <string name="students_id">STUDENTS ID</string>
+    <string name="medical_id">MEDICAL ID</string>
+    <string name="drivers_licence">DRIVERS LICENCE</string>
+    <string name="generate">GENERATE</string>
+</resources>

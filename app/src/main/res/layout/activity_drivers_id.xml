@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".studentsID">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="90dp">
+
+        <ImageButton
+            android:id="@+id/backTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/back"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="First Name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driversNam"
+        app:layout_constraintLeft_toLeftOf="@id/driversNam" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Code"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverCod"
+        app:layout_constraintLeft_toLeftOf="@id/driversNam"
+        app:layout_constraintStart_toStartOf="@+id/driverCod" />
+
+    <TextView
+        android:id="@+id/lastnametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Surname"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverSur"
+        app:layout_constraintLeft_toLeftOf="@id/driverSur" />
+
+    <TextView
+        android:id="@+id/nationalityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Date of Birth"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverDateOfBirth"
+        app:layout_constraintLeft_toLeftOf="@id/driverDateOfBirth" />
+
+
+    <TextView
+        android:id="@+id/idnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="TRN"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverTRNo"
+        app:layout_constraintLeft_toLeftOf="@id/driverTRNo" />
+
+    <TextView
+        android:id="@+id/dateofissuetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Issued By"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverIssueBy"
+        app:layout_constraintLeft_toLeftOf="@id/driverTRNo"
+        app:layout_constraintStart_toStartOf="@+id/driverIssueBy" />
+
+    <TextView
+        android:id="@+id/dateofissuetxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="First Issue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverFirstIssue"
+        app:layout_constraintLeft_toLeftOf="@id/driverTRNo"
+        app:layout_constraintStart_toStartOf="@+id/driverFirstIssue" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Licence No"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverLicence"
+        app:layout_constraintLeft_toLeftOf="@id/driverTRNo"
+        app:layout_constraintStart_toStartOf="@+id/driverLicence" />
+
+    <TextView
+        android:id="@+id/dob2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Validity"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/driverLicence"
+        app:layout_constraintLeft_toLeftOf="@id/driverTRNo"
+        app:layout_constraintStart_toStartOf="@+id/driverValidity" />
+
+    <EditText
+        android:id="@+id/driverSur"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Surname"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/driverCod"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Code"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintLeft_toLeftOf="@id/driversNam"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/driversNam"
+        app:layout_constraintTop_toBottomOf="@id/driversNam" />
+
+    <EditText
+        android:id="@+id/driversNam"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="First Name"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/driverSur"
+        app:layout_constraintTop_toBottomOf="@id/driverSur" />
+
+    <EditText
+        android:id="@+id/driverTRNo"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter TRN "
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/driverDateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/driverCod"
+        app:layout_constraintTop_toBottomOf="@+id/driverDateOfBirth" />
+
+    <EditText
+        android:id="@+id/driverLicence"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Licence No"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/driverIssueBy"
+        app:layout_constraintTop_toBottomOf="@+id/driverIssueBy" />
+
+    <EditText
+        android:id="@+id/driverValidity"
+        android:layout_width="165dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Validity"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/driverFirstIssue"
+        app:layout_constraintTop_toBottomOf="@+id/driverIssueBy" />
+
+    <EditText
+        android:id="@+id/driverIssueBy"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Issued By"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/driverTRNo"
+        app:layout_constraintTop_toBottomOf="@id/driverTRNo" />
+
+    <EditText
+        android:id="@+id/driverFirstIssue"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="First Issue"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/driverTRNo"
+        app:layout_constraintTop_toBottomOf="@+id/driverTRNo" />
+
+    <EditText
+        android:id="@+id/driverDateOfBirth"
+        android:layout_width="205dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="´´@"
+        android:background="@drawable/edittext_corner"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Date of Birth"
+        android:importantForAutofill="auto"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#6C6C6C"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintRight_toRightOf="@id/driverSur"
+        app:layout_constraintTop_toBottomOf="@id/driversNam" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.2"
+        android:text="GENERATE"
+        android:textColor="#351702"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/driverValidity"
+        app:layout_constraintStart_toStartOf="@+id/driverLicence"
+        app:layout_constraintTop_toBottomOf="@+id/driverLicence"
+        tools:ignore="UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

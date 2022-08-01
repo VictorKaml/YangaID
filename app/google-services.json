@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "34939932624",
+    "firebase_url": "https://yangaid-default-rtdb.firebaseio.com",
+    "project_id": "yangaid",
+    "storage_bucket": "yangaid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34939932624:android:4c9ded45604749b6ecb3d5",
+        "android_client_info": {
+          "package_name": "com.example.yangaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34939932624-95ai14pa8k8d1jsol78h3o4tjr2tt5bs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY2p9eXQyXYFRBE8tMfEvUfuS2HEMwklk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34939932624-95ai14pa8k8d1jsol78h3o4tjr2tt5bs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
