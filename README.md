@@ -1,4 +1,2 @@
-![ic_launcher-playstore](https://user-images.githubusercontent.com/31888758/188259434-c7ac42c8-0cb8-451c-b6b4-e27db073e04d.png)
-# YangaID Application
+![YANGAIDLOGO@2x](https://user-images.githubusercontent.com/31888758/188260530-58ddf3bc-8d71-4050-a12b-62acf61374c0.png)
 
-A digital identity mobile application
